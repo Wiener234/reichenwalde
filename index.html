@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link href="../dist/output.css" rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
 </head>
-<body class="h-full">
-  <header class=" bg-green-700 top-0">
+<body class="h-full bg-white dark:bg-gray-800">
+  <header class="sticky bg-green-700 top-0 drop-shadow-xl dark:drop-shadow-[0_20px_35px_rgba(255,255,255,0.03)]">
     
     <!-- <nav class="flex absolute right-10 top-5"> -->
-      <nav class="flex flex-row">
+      <nav class="flex flex-row mx-72 dark:text-white">
 
-        <div class="items-end font-semibold text-xl flex flex-row p-5 font-serif self-center">
-          <a class="text-x3" href=""> SV Eintrach Reichenwalde </a>
+        <div class="items-end font-bold text-xl flex flex-row p-5 font-serif self-center">
+          <div class="rounded-full h-14 w-14 p-5 bg-gray-500 self-center bg-center bg-cover bg-[url('https://www.fussball.de/export.media/-/action/getLogo/format/2/id/00ES8GNBJO0000A0VV0AG08LVUPGND5I')]"></div>
+          <a class="text-3xl p-5" href=""> SV Eintrach Reichenwalde </a>
         </div>
 
         <!-- <div id="nav-icon" class="h-16 w-16 p-2">
@@ -21,26 +23,40 @@
             </svg>
         </div> -->
        
-        <div class="items-end flex-grow p-5 list-none self-center">
+        <div class="items-end flex-grow p-5 list-none self-center text-xl font-semibold">
             <ul class="flex flex-row-reverse">
-            <li class="mx-4 order-last">?????????</li>
-            <li class="mx-4">Manschaften</li>
-            <li class="mx-4 order-first">Kontakt</li>
+            <li class="mx-4 order-last  hover:underline">?????????</li>
+            <li class="mx-4  hover:underline"><a href="./src/Manschaften.html"">Manschaften</a></li>
+            <li class="mx-4 order-first hover:underline">Kontakt</li>
             </ul>
         </div>
     </nav>
   </header>
 
-  <div class="bg-red-500 min-h-full">
+  <div class="text-black dark:text-white dark:bg-gray-800  min-h-full mx-72 my-10">
     <div class="p-6">
-    <div class="py-3">
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+    <div class="py-3 text-lg">
+    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus </p>
     </div>
-    <div class="bg-gray-400 py-3 h-80 flex place-content-center">
-      <p class="text-center">Bild</p>
-    </div>
+    <div class=" items-center mt-10 h-96 flex place-content-center">
+      <img class="h-full" src="https://www.moz.de/imgs/38/8/2/3/3/8/8/5/0/tok_8892d51ab2764623caa4808e95c592ea/w1200_h675_x750_y562_744a928d79ddf6ca.jpeg" alt="">
     </div>
   </div>
+  </div>
+
+
+  <footer class="bg-green-700 h-12 dark:text-white">
+    <div class="mx-6">
+    <p>© SV Eintracht Reichenwalde - 2022</p>
+    <div class="flex flex-row list-none">
+      <li class="mr-3"><a href="">Impressum</a></li>
+      <li class="mr-3"><a href="">Kontakt</a></li>
+    </div>
+    </div>
+  </footer>
+
+  
+
 
 
 
